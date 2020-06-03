@@ -32,7 +32,7 @@ const myDropdown = (arr) => {
   };
 
 // Ajax section - gets data from JSON
-$.ajax('data/page-1.json')
+$.ajax('data/page-2.json')
   .then( data => {
 
     data.forEach((obj) => { // pass in object - make as many instances as there are objects
@@ -54,4 +54,3 @@ function clickHandler(event) {
 
 // Event listener
 $('select').on('change', clickHandler)
-
