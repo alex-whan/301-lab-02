@@ -22,11 +22,21 @@ Estimate of time needed to complete: 1.5 hours
 
 Start time: 2:35pm
 
-Finish time:
+Finish time: 5:15pm
 
-Actual time needed to complete: 
+Actual time needed to complete: 2 hr 45 min
 
 ---
+
+Number and name of feature: Feature #3 - Styling the Application
+
+Estimate of time needed to complete: 1 hours
+
+Start time: 5:20pm
+
+Finish time: 5:15pm
+
+Actual time needed to complete: 2 hr 45 min
 
 
 
