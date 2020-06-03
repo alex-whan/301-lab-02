@@ -1,0 +1,25 @@
+body {
+  background-color: azure;
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+}
+
+footer {
+  clear: both;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+img {
+  border: 1px black ridge;
+  float: left;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
