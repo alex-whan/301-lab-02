@@ -34,7 +34,7 @@ ImagePool.prototype.render = function() {
   $newSection.find('p').text(this.description);
 
   // make a new p for number of horns
-  $newSection.find('p').text(this.horns);
+  //$newSection.find('p').text(this.horns);s
 
   // append to the DOM
   $('main').append($newSection);
@@ -77,7 +77,7 @@ function clickHandler(event) {
 
   let correctSelection = $(this).val();
   $(`.${correctSelection}`).show();
-  console.log(correctSelection);
+  
 
   // give all images a class/attribute of their keyword - to only show those elements
 
