@@ -56,14 +56,14 @@
     "horns": 1
   },
   {
-    "image_url": "https://cdn.shopify.com/s/files/1/1420/6660/products/Narwal_2.jpg?v=1527714893",
+    "image_url": "https://images.unsplash.com/photo-1485809876425-9c96ea4132fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     "title": "Norman the Narwhal",
     "description": "He's cute, he's a plush!",
     "keyword": "narwhal",
     "horns": 1
   },
   {
-    "image_url": "https://cdn.shopify.com/s/files/1/1420/6660/products/Unicorn_Front_little_bigger_2048x2048.jpg?v=1517539703",
+    "image_url": "https://images.unsplash.com/photo-1562037283-072818fb6d8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=787&q=80",
     "title": "Cupcake the Unicorn",
     "description": "Because Norman the Narwhal needs friends",
     "keyword": "unicorn",
@@ -77,7 +77,7 @@
     "horns": 1
   },
   {
-    "image_url": "https://www.maxpixel.net/static/photo/1x/Sky-Head-Giraffe-Animal-Portrait-3430849.jpg",
+    "image_url": "https://images.unsplash.com/photo-1554490828-442467b562dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
     "title": "Giraffe",
     "description": "This giraffe is as tall as the sky",
     "keyword": "giraffe",
@@ -133,7 +133,7 @@
     "horns": 100
   },
   {
-    "image_url": "https://vignette.wikia.nocookie.net/harrypotter/images/3/3e/Horntail-prm.png/revision/latest?cb=20161208133543",
+    "image_url": "https://images.unsplash.com/photo-1560689939-c5f3623eaf1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "title": "Hungarian Horntail from the Triwizard Tournament",
     "description": "Never tickle a sleeping dragon",
     "keyword": "dragon",
