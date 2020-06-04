@@ -82,6 +82,7 @@ function clickHandler(event) {
 // Event handler to sort images/animals by title alphabetically
 function sortByTitleHandler(event) {
   event.preventDefault();
+  $('main').empty();
   $('.start').hide(2000);
   sortTitles();
 }
@@ -89,6 +90,7 @@ function sortByTitleHandler(event) {
 // Event handler to sort images/animals by number of horns
 function sortByHornHandler(event) {
   event.preventDefault();
+  $('main').empty();
   $('.start').hide(2000);
   sortHorns();
 }
