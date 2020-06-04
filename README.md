@@ -2,88 +2,92 @@
 
 ## Lab: 02 - jQuery Selectors and Events
 
+### Collaborators:
+  * Alex Whan
+  * Robert Carter
+
 ### Time Estimates for Each Feature:
 
-Number and name of feature: Feature #1 - Display Images
+*Number and name of feature:* Feature #1 - Display Images
 
-Estimate of time needed to complete: 1 hour
+*Estimate of time needed to complete:* 1 hr
 
-Start time: 1:35pm
+*Start time:* 1:35pm
 
-Finish time: 2:34pm
+*Finish time:* 2:35pm
 
-Actual time needed to complete: 1 hour
-
----
-
-Number and name of feature: Feature #2 - Filter Images
-
-Estimate of time needed to complete: 1.5 hours
-
-Start time: 2:35pm
-
-Finish time: 5:15pm
-
-Actual time needed to complete: 2 hr 45 min
+*Actual time needed to complete:* 1 hr
 
 ---
 
-Number and name of feature: Feature #3 - Styling the Application
+*Number and name of feature:* Feature #2 - Filter Images
 
-Estimate of time needed to complete: 1 hours
+*Estimate of time needed to complete:* 1.5 hr
 
-Start time: 5:20pm
+*Start time:* 2:35pm
 
-Finish time: 5:40pm
+*Finish time:* 5:15pm
 
-Actual time needed to complete: 20 min (for basic, basic CSS)
-
----
-
-Number and name of feature: Feature #4 - Pagination
-
-Estimate of time needed to complete: 1 hour
-
-Start time: 12:45pm
-
-Finish time: 1:10pm
-
-Actual time needed to complete: 25 min
+*Actual time needed to complete:* 2 hr 45 min
 
 ---
 
-Number and name of feature: Feature #5 - Templating
+*Number and name of feature:* Feature #3 - Styling the Application
 
-Estimate of time needed to complete: 1.5 hours
+*Estimate of time needed to complete:* 1 hr
 
-Start time: 1:15pm
+*Start time:* 5:20pm
 
-Finish time: 2:40pm
+*Finish time:* 5:40pm
 
-Actual time needed to complete: 1 hr 25 min
-
----
-
-Number and name of feature: Feature #6 - Styling with Flexbox
-
-Estimate of time needed to complete: 1 hour
-
-Start time: 2:45pm
-
-Finish time: 3:35pm
-
-Actual time needed to complete: 50 min
+*Actual time needed to complete:* 20 min (for basic, basic CSS)
 
 ---
 
-Number and name of feature: Feature #7 - Sort the Images
+*Number and name of feature:* Feature #4 - Pagination
 
-Estimate of time needed to complete: 2 hours
+*Estimate of time needed to complete:* 1 hr
 
-Start time: 3:35pm
+*Start time:* 12:45pm
 
-Finish time: 
+*Finish time:* 1:10pm
 
-Actual time needed to complete:
+*Actual time needed to complete:* 25 min
+
+---
+
+*Number and name of feature:* Feature #5 - Templating
+
+*Estimate of time needed to complete:* 1.5 hours
+
+*Start time:* 1:15pm
+
+*Finish time:* 2:40pm
+
+*Actual time needed to complete:* 1 hr 25 min
+
+---
+
+*Number and name of feature:* Feature #6 - Styling with Flexbox
+
+*Estimate of time needed to complete:* 1 hour
+
+*Start time:* 2:45pm
+
+*Finish time:* 3:35pm
+
+*Actual time needed to complete:* 50 min
+
+---
+
+*Number and name of feature:* Feature #7 - Sort the Images
+
+*Estimate of time needed to complete:* 2 hours
+
+*Start time:* 3:35pm
+
+*Finish time:* 5:25pm
+
+*Actual time needed to complete:* 1 hr 50 min
 
 
