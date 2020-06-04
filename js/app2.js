@@ -18,6 +18,33 @@ const addingValuesToImages = (item) => {
   // target = what you're rendering it to - targeted main with an id of #main
 }
 
+// Callback sort function for Titles
+const sortTitles = () => {
+  allImages.sort((a, b) => {
+  return a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1;
+  })
+
+  allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach
+
+    addingValuesToImages(value); // adds Images to Mustache template
+  })
+
+  // In your normal sort functions, right here is where you'd return the original array (allImages)
+
+}
+
+// Callback sort function Number of Horns
+const sortHorns = () => {
+  allImages.sort((a, b) => {
+  return a.horns > b.horns ? 1 : -1;
+  })
+
+  allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach
+
+    addingValuesToImages(value); // adds Images to Mustache template
+  })
+}
+
 // Checks to make sure image keywords are not repeated in dropdown menu
 const myDropdown = (arr) => {
     allImages.forEach((value) => {
@@ -39,7 +66,7 @@ $.ajax('data/page-2.json')
         new ImagePool(obj); // take object and run it back through constructor and take whatever values are there
     })
     allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach
-      addingValuesToImages(value);
+      addingValuesToImages(value); // adds Images to Mustache template
     })      
   myDropdown(); // Create dropdown menu here so you don't have multiple instances
  })
@@ -52,5 +79,21 @@ function clickHandler(event) {
 
 }
 
-// Event listener
-$('select').on('change', clickHandler)
+// Event handler to sort images/animals by title alphabetically
+function sortByTitleHandler(event) {
+  event.preventDefault();
+  $('.start').hide(2000);
+  sortTitles();
+}
+
+// Event handler to sort images/animals by number of horns
+function sortByHornHandler(event) {
+  event.preventDefault();
+  $('.start').hide(2000);
+  sortHorns();
+}
+
+// Event listeners
+$('select').on('change', clickHandler) // event listener for keyword selection in dropdown
+$('#title-radio').on('click', sortByTitleHandler) // event listener for "sort by title" click
+$('#horn-radio').on('click', sortByHornHandler) // event listener for "sort by number of horns" click
