@@ -11,6 +11,15 @@
     <link href="css/modules.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     <script src="https://unpkg.com/mustache@latest"></script>
+      <script id="photo-template" type="text/x-tmpl-mustache">
+        <div class="div {{keyword}} start">
+          <h2>{{title}}<h2>
+          <img src="{{image_url}}" alt="{{keyword}}">
+          <p>{{description}}</p>
+          <p>{{keyword}}</p>
+          <h3>{{horns}}<h3>
+        </div>
+      </script>
   </head>
 
   <body>
@@ -32,19 +41,7 @@
       </nav>
     </header>
     <main id="main">
-
-      <script id="photo-template" type="text/x-tmpl-mustache">
-        <div class="div {{keyword}} start">
-          <h2>{{title}}<h2>
-          <img src="{{image_url}}" alt="{{keyword}}">
-          <p>{{description}}</p>
-          <p>{{keyword}}</p>
-          <h3>{{horns}}<h3>
-        </div>
-      </script>
-
     </main>
-
     <footer>
       &copy; 2020 Code Fellows
     </footer>
