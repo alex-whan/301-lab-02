@@ -24,19 +24,12 @@ const sortTitles = () => {
   return a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1;
   })
 
-  allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach - try doing this whole thing again from here to next line
+  allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach
 
     addingValuesToImages(value); // adds Images to Mustache template
   })
 
-
   // In your normal sort functions, right here is where you'd return the original array (allImages)
-
-  // Do something like: Clear template command (delete whatever is on front) - check syntax/commands
-  // If you can get rid of previous template, after that call (starting from scratch), then you could do allImages.forEach, and then do the same call from original render (addingValuesToImages();) like the beginning
-  // Take some kind of input - was the input "Sort by title" or "sort by horn"? Call whatever function they clicked on
-  // Same idea as flipping pages - just take off stuff you have and re-render new image array (Mustache makes it easier)
-  // Find a way to say - take off whatever's in the template, and do it again
 
 }
 
@@ -46,7 +39,7 @@ const sortHorns = () => {
   return a.horns > b.horns ? 1 : -1;
   })
 
-  allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach - try doing this whole thing again from here to next line
+  allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach
 
     addingValuesToImages(value); // adds Images to Mustache template
   })
@@ -72,7 +65,7 @@ $.ajax('data/page-1.json')
     data.forEach((obj) => { // pass in object - make as many instances as there are objects
         new ImagePool(obj); // take object and run it back through constructor and take whatever values are there
     })
-    allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach - try doing this whole thing again from here to next line
+    allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach
       addingValuesToImages(value); // adds Images to Mustache template
     })      
   myDropdown(); // Create dropdown menu here so you don't have multiple instances
@@ -86,23 +79,22 @@ function clickHandler(event) {
 
 }
 
+// Event handler to sort images/animals by title alphabetically
 function sortByTitleHandler(event) {
   event.preventDefault();
   $('.start').hide(2000);
   sortTitles();
 }
 
-
+// Event handler to sort images/animals by number of horns
 function sortByHornHandler(event) {
   event.preventDefault();
   $('.start').hide(2000);
   sortHorns();
 }
 
-console.log(allImages);
-
-// Event listener
-$('select').on('change', clickHandler)
-$('#title-radio').on('click', sortByTitleHandler)
-$('#horn-radio').on('click', sortByHornHandler)
+// Event listeners
+$('select').on('change', clickHandler) // event listener for keyword selection in dropdown
+$('#title-radio').on('click', sortByTitleHandler) // event listener for "sort by title" click
+$('#horn-radio').on('click', sortByHornHandler) // event listener for "sort by number of horns" click
 
