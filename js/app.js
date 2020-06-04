@@ -18,6 +18,40 @@ const addingValuesToImages = (item) => {
   // target = what you're rendering it to - targeted main with an id of #main
 }
 
+// Callback sort function for Titles
+const sortTitles = () => {
+  allImages.sort((a, b) => {
+  return a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1;
+  })
+
+  allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach - try doing this whole thing again from here to next line
+
+    addingValuesToImages(value); // adds Images to Mustache template
+  })
+
+
+  // In your normal sort functions, right here is where you'd return the original array (allImages)
+
+  // Do something like: Clear template command (delete whatever is on front) - check syntax/commands
+  // If you can get rid of previous template, after that call (starting from scratch), then you could do allImages.forEach, and then do the same call from original render (addingValuesToImages();) like the beginning
+  // Take some kind of input - was the input "Sort by title" or "sort by horn"? Call whatever function they clicked on
+  // Same idea as flipping pages - just take off stuff you have and re-render new image array (Mustache makes it easier)
+  // Find a way to say - take off whatever's in the template, and do it again
+
+}
+
+// Callback sort function Number of Horns
+const sortHorns = () => {
+  allImages.sort((a, b) => {
+  return a.horns > b.horns ? 1 : -1;
+  })
+
+  allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach - try doing this whole thing again from here to next line
+
+    addingValuesToImages(value); // adds Images to Mustache template
+  })
+}
+
 // Checks to make sure image keywords are not repeated in dropdown menu
 const myDropdown = (arr) => {
     allImages.forEach((value) => {
@@ -38,8 +72,8 @@ $.ajax('data/page-1.json')
     data.forEach((obj) => { // pass in object - make as many instances as there are objects
         new ImagePool(obj); // take object and run it back through constructor and take whatever values are there
     })
-    allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach
-      addingValuesToImages(value);
+    allImages.forEach(value => { // for each value/image you have, render it to page with render function - but AFTER your original forEach - try doing this whole thing again from here to next line
+      addingValuesToImages(value); // adds Images to Mustache template
     })      
   myDropdown(); // Create dropdown menu here so you don't have multiple instances
  })
@@ -52,6 +86,23 @@ function clickHandler(event) {
 
 }
 
+function sortByTitleHandler(event) {
+  event.preventDefault();
+  $('.start').hide(2000);
+  sortTitles();
+}
+
+
+function sortByHornHandler(event) {
+  event.preventDefault();
+  $('.start').hide(2000);
+  sortHorns();
+}
+
+console.log(allImages);
+
 // Event listener
 $('select').on('change', clickHandler)
+$('#title-radio').on('click', sortByTitleHandler)
+$('#horn-radio').on('click', sortByHornHandler)
 
